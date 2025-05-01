@@ -1,0 +1,3 @@
+/Users/a1111/Desktop/litenergy/build/CMakeFiles/server.dir
+/Users/a1111/Desktop/litenergy/build/CMakeFiles/edit_cache.dir
+/Users/a1111/Desktop/litenergy/build/CMakeFiles/rebuild_cache.dir

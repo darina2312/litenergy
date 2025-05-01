@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тест сервера</title>
+</head>
+<body>
+    <h1>Карточки:</h1>
+    <div id="cards"></div>
 
+    <script>
+        // Запрос к серверу
+        fetch('http://localhost:8080/cards')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('cards').innerHTML = data
+                    .map(card => `<p><b>${card.question}</b>: ${card.answer}</p>`)
+                    .join('');
+            });
+    </script>
+</body>
+</html>
